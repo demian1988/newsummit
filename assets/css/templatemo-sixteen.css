@@ -1058,3 +1058,23 @@ footer .inner-content p a {
 		bottom: 0;
 	}
 }
+/* 2025/07/28 */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.col-md-4:hover .overlay {
+  opacity: 1;
+}
